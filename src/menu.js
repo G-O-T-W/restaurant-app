@@ -1,3 +1,5 @@
+import './menu.css'
+
 export default function () {
     const content = document.querySelector("#content");
     

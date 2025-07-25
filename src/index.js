@@ -1,4 +1,3 @@
-// src/index.js
 import './styles.css';
 import load_homepage from './homepage.js';
 import load_menu from './menu.js';
