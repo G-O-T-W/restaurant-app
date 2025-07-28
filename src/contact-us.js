@@ -1,5 +1,8 @@
+import './contact-us.css';
+
 export default function (){
     const content = document.querySelector('#content');
+    content.className = 'contact-content';
 
     const headline = document.createElement('h1');
     headline.textContent = "Contact Us";
@@ -13,5 +16,11 @@ export default function (){
     const addr = document.createElement('p');
     addr.textContent = "Address :\tAddressLine1, AddressLine2, City, State, Country, Pin Code";
 
-    content.replaceChildren(headline, email, phone, addr);
+    const mainContent = document.createElement('div');
+    mainContent.classList.add('main-content');
+    mainContent.appendChild(email);
+    mainContent.appendChild(phone);
+    mainContent.appendChild(addr);
+
+    content.replaceChildren(headline, mainContent);
 }

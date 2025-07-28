@@ -95,6 +95,10 @@ nav {
   cursor: pointer;
 }
 
+.nav-button.active {
+  border: 4px solid var(--text-color);
+}
+
 footer {
   background-color: var(--secondary-color);
   font-size: 1.6rem;

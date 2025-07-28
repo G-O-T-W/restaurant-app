@@ -1,8 +1,9 @@
 import Banner from './banner.png';
-import './homepage.css'
+import './homepage.css';
 
 export default function () {
     const content = document.querySelector("#content");
+    content.className = 'homepage-content';
     const headline = document.createElement("h1");
     const descr = document.createElement("p");
     const banner = new Image();

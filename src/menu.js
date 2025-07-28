@@ -2,6 +2,7 @@ import './menu.css'
 
 export default function () {
     const content = document.querySelector("#content");
+    content.className = 'menu-content';
     
     const headline = document.createElement("h1");
     headline.textContent = "Menu";
